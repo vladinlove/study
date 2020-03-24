@@ -1,13 +1,14 @@
+#Подбрасываем монетку 100 раз и смотрим что выйдет
 import random
-print('\t\nЯ помогу тебе принять решение касательно действий!')
-print('\t\nПросто задай свой вопрос и я скажу стоит ли это делать!')
-a = input('\nЗадай свой вопрос: ')
-b = random.randint(1,3)
-if b == 1:
-    b = 'почему бы и нет'
-elif b == 2:
-    b = 'лучше не делать этого'
-else:
-    b = 'однозначного ответа нет - решаешь только ты'
-print('Мой ответ: ', b)
-input('Нажми Enter')
+count = 0
+orel = 0
+reshka = 0
+while count != 100:
+    podbros = random.randint (1,2)
+    if podbros == 1:
+        orel += 1
+    else:
+        reshka += 1
+    count += 1
+print('Орел ', orel, 'Решка ', reshka)
+
