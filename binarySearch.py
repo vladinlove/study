@@ -16,5 +16,5 @@ def binarySearch (list, item):
     return None
 
 
-numbers = [i for i in range(0, 257)]
-print(binarySearch(numbers, 256))
+numbers = [i for i in range(1, 501)]
+print(binarySearch(numbers, 250))
